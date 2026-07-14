@@ -11,16 +11,15 @@ export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Set initial mobile state
-    setIsMobile(window.innerWidth < 768);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1280);
+    };
 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
+    handleResize();
 
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
@@ -56,7 +55,6 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex justify-between items-center">
-          {/* Logo */}
           <Link href="/" className="flex items-center">
             <motion.div
               className={`text-2xl font-serif font-bold ${
@@ -64,12 +62,11 @@ export default function Navbar() {
               }`}
               whileHover={{ scale: 1.05 }}
             >
-              Luxury Resort
+              Mayadevi Resort
             </motion.div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden xl:flex items-center gap-8">
             {navItems.map((item) => (
               <motion.div
                 key={item.href}
@@ -91,10 +88,9 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA Button */}
           <Link href="/reservation">
             <motion.button
-              className="hidden md:block px-6 py-2 bg-black text-white font-display rounded text-sm font-semibold hover:bg-accent-gold hover:text-black transition-all duration-300"
+              className="hidden xl:block px-6 py-2 bg-black text-white font-display rounded text-sm font-semibold hover:bg-accent-gold hover:text-black transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -102,23 +98,21 @@ export default function Navbar() {
             </motion.button>
           </Link>
 
-          {/* Mobile Menu Button */}
           <motion.button
-            className="md:hidden"
+            className="xl:hidden"
             onClick={() => setIsOpen(!isOpen)}
             whileTap={{ scale: 0.95 }}
           >
             {isOpen ? (
               <X className="w-6 h-6 text-black" />
             ) : (
-              <Menu className="w-6 h-6 text-black" />
+              <Menu className={`w-6 h-6 ${isMobile || isScrolled ? "text-black" : "text-white"}`} />
             )}
           </motion.button>
         </div>
 
-        {/* Mobile Navigation */}
         <motion.div
-          className="md:hidden overflow-hidden bg-white"
+          className="xl:hidden overflow-hidden bg-white"
           initial={{ height: 0, opacity: 0 }}
           animate={{
             height: isOpen ? "auto" : 0,
@@ -143,9 +137,9 @@ export default function Navbar() {
                 </Link>
               </motion.div>
             ))}
-            <Link href="/reservation">
+            <Link href="/reservation" className="block px-4 py-2">
               <motion.button
-                className="w-full mt-4 px-6 py-2 bg-black text-white font-display rounded text-sm font-semibold hover:bg-accent-gold hover:text-black transition-all"
+                className="w-full mt-4 px-6 py-3 bg-black text-white font-display rounded text-sm font-semibold hover:bg-accent-gold hover:text-black transition-all"
                 whileTap={{ scale: 0.95 }}
               >
                 Reserve Now

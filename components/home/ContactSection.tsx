@@ -33,7 +33,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-display font-semibold text-white">Phone</h3>
-                  <p className="text-gray-lighter">+1 (555) 123-4567</p>
+                  <p className="text-gray-lighter">+977 9742911516</p>
                 </div>
               </motion.div>
 
@@ -50,7 +50,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-display font-semibold text-white">Email</h3>
-                  <p className="text-gray-lighter">info@luxuryresort.com</p>
+                  <p className="text-gray-lighter">info@mayadeviresort.com</p>
                 </div>
               </motion.div>
 
@@ -67,7 +67,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-display font-semibold text-white">Address</h3>
-                  <p className="text-gray-lighter">123 Luxury Lane, Paradise Beach, PB 12345</p>
+                  <p className="text-gray-lighter">M5QQ+M7H, Mahendra Hwy, Banaganga, Nepal</p>
                 </div>
               </motion.div>
 

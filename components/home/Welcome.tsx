@@ -82,7 +82,7 @@ export default function Welcome() {
 
         {/* Features Grid */}
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-5 gap-6 mt-20 pt-20 border-t border-gray-dark"
+          className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-2 mt-20 pt-20 border-t border-gray-dark"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

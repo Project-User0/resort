@@ -37,7 +37,7 @@ export default function AboutPage() {
       <Navbar />
       <PageHero
         title="About Our Resort"
-        subtitle="A Legacy of Luxury and Hospitality"
+        subtitle="A Legacy of Mayadevi and Hospitality"
         backgroundImage={images.heroPages.about}
         showScroll={false}
       />
@@ -57,7 +57,7 @@ export default function AboutPage() {
                   Our Story
                 </h2>
                 <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                  Founded in 1985, our luxury resort has been a beacon of hospitality and excellence for nearly four decades. What began as a small boutique property has evolved into a world-class destination, welcoming guests from every corner of the globe.
+                  Founded in 1985, our mayadevi resort has been a beacon of hospitality and excellence for nearly four decades. What began as a small boutique property has evolved into a world-class destination, welcoming guests from every corner of the globe.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
                   Our journey has been defined by a commitment to innovation, sustainability, and an unwavering dedication to creating unforgettable experiences for our guests. Today, we stand as one of the most respected resort brands in the industry.

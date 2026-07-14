@@ -1,57 +1,60 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import { Clock, Users } from 'lucide-react'
-import { images } from '@/lib/images'
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
-import PageHero from '@/components/layout/PageHero'
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { Clock, Users } from "lucide-react";
+import { images } from "@/lib/images";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import PageHero from "@/components/layout/PageHero";
+import Link from "next/link";
 
 const experiences = [
   {
-    title: 'Sunset Sailing',
-    description: 'Experience the beauty of the ocean with a guided sailing adventure',
-    duration: '3 hours',
-    groupSize: 'Up to 12 guests',
+    title: "Sunset Sailing",
+    description:
+      "Experience the beauty of the ocean with a guided sailing adventure",
+    duration: "3 hours",
+    groupSize: "Up to 12 guests",
     image: images.activities[0],
   },
   {
-    title: 'Snorkeling Expedition',
-    description: 'Explore vibrant coral reefs and marine life',
-    duration: '4 hours',
-    groupSize: 'Up to 8 guests',
+    title: "Snorkeling Expedition",
+    description: "Explore vibrant coral reefs and marine life",
+    duration: "4 hours",
+    groupSize: "Up to 8 guests",
     image: images.activities[1],
   },
   {
-    title: 'Mountain Hiking',
-    description: 'Trek through scenic trails with breathtaking views',
-    duration: '5 hours',
-    groupSize: 'Up to 10 guests',
+    title: "Mountain Hiking",
+    description: "Trek through scenic trails with breathtaking views",
+    duration: "5 hours",
+    groupSize: "Up to 10 guests",
     image: images.activities[2],
   },
   {
-    title: 'Spa Wellness',
-    description: 'Rejuvenate with our signature massage and wellness treatments',
-    duration: '2 hours',
-    groupSize: 'Individual',
+    title: "Spa Wellness",
+    description:
+      "Rejuvenate with our signature massage and wellness treatments",
+    duration: "2 hours",
+    groupSize: "Individual",
     image: images.activities[3],
   },
   {
-    title: 'Yoga Retreat',
-    description: 'Find inner peace with daily yoga and meditation sessions',
-    duration: '1.5 hours',
-    groupSize: 'Up to 15 guests',
+    title: "Yoga Retreat",
+    description: "Find inner peace with daily yoga and meditation sessions",
+    duration: "1.5 hours",
+    groupSize: "Up to 15 guests",
     image: images.activities[4],
   },
   {
-    title: 'Water Sports',
-    description: 'Jet skiing, paddleboarding, and surfing lessons available',
-    duration: 'Varies',
-    groupSize: 'Individual',
+    title: "Water Sports",
+    description: "Jet skiing, paddleboarding, and surfing lessons available",
+    duration: "Varies",
+    groupSize: "Individual",
     image: images.activities[5],
   },
-]
+];
 
 export default function ExperiencesPage() {
   return (
@@ -110,13 +113,19 @@ export default function ExperiencesPage() {
                     </div>
 
                     {/* CTA */}
-                    <motion.button
-                      className="w-full px-4 py-2 border-2 border-black text-black font-display font-semibold rounded hover:bg-black hover:text-white transition-all duration-300"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
+
+                    <Link
+                      href={`/experiences/${idx + 1}`}
+                      className="block w-full"
                     >
-                      Learn More
-                    </motion.button>
+                      <motion.button
+                        className="w-full px-4 py-2 border-1 border-black text-black font-display rounded hover:bg-black hover:text-white transition-all duration-300"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        Learn More
+                      </motion.button>
+                    </Link>
                   </div>
                 </motion.div>
               ))}
@@ -140,20 +149,22 @@ export default function ExperiencesPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
                 {
-                  season: 'Summer',
-                  activities: 'Beach volleyball, sunset cinema, tropical fruit tastings',
+                  season: "Summer",
+                  activities:
+                    "Beach volleyball, sunset cinema, tropical fruit tastings",
                 },
                 {
-                  season: 'Autumn',
-                  activities: 'Hiking festivals, harvest celebrations, cooking workshops',
+                  season: "Autumn",
+                  activities:
+                    "Hiking festivals, harvest celebrations, cooking workshops",
                 },
                 {
-                  season: 'Winter',
-                  activities: 'Indoor sports, wellness retreats, holiday galas',
+                  season: "Winter",
+                  activities: "Indoor sports, wellness retreats, holiday galas",
                 },
                 {
-                  season: 'Spring',
-                  activities: 'Flower festivals, nature walks, spa specials',
+                  season: "Spring",
+                  activities: "Flower festivals, nature walks, spa specials",
                 },
               ].map((seasonal, idx) => (
                 <motion.div
@@ -167,9 +178,7 @@ export default function ExperiencesPage() {
                   <h3 className="text-2xl font-serif font-bold text-accent-gold mb-4">
                     {seasonal.season}
                   </h3>
-                  <p className="text-gray-300">
-                    {seasonal.activities}
-                  </p>
+                  <p className="text-gray-300">{seasonal.activities}</p>
                 </motion.div>
               ))}
             </div>
@@ -178,5 +187,5 @@ export default function ExperiencesPage() {
       </div>
       <Footer />
     </main>
-  )
+  );
 }

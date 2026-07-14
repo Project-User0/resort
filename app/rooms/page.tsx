@@ -111,7 +111,7 @@ export default function RoomsPage() {
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-4 right-4 bg-accent-gold text-black px-4 py-2 rounded-full font-display font-semibold">
-                      ${room.price}/night
+                      Rs.{room.price}/night
                     </div>
                   </div>
 
@@ -161,7 +161,7 @@ export default function RoomsPage() {
                     {/* Actions */}
                     <Link href={`/rooms/${room.id}`}>
                       <motion.button
-                        className="w-full px-6 py-3 border-2 border-black text-black font-display font-semibold rounded hover:bg-black hover:text-white transition-all duration-300"
+                        className="w-full px-6 py-2 border-1 border-black text-black font-display rounded hover:bg-black hover:text-white transition-all duration-300"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                       >

@@ -60,7 +60,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-serif font-bold mb-4 text-accent-gold">
-              Luxury Resort
+              Mayadevi Resort
             </h3>
             <p className="text-gray-lighter text-sm leading-relaxed mb-6">
               Your sanctuary of elegance and tranquility. Experience world-class hospitality.
@@ -125,7 +125,7 @@ export default function Footer() {
           viewport={{ once: true }}
         >
           <div className="text-gray-lighter text-sm">
-            <p>&copy; 2024 Luxury Resort. All rights reserved.</p>
+            <p>&copy; 2024 Mayadevi Resort. All rights reserved.</p>
           </div>
 
           <div className="flex gap-6 text-gray-lighter text-sm">

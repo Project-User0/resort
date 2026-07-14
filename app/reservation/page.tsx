@@ -94,17 +94,17 @@ export default function ReservationPage() {
   };
 
   return (
-    <main>
+    <main className="bg-white">
       <Navbar />
       <PageHero
         title="Reserve Your Stay"
-        subtitle="Complete this form to book your luxury resort experience"
+        subtitle="Complete this form to book your mayadevi resort experience"
         backgroundImage={images.heroPages.rooms}
         showScroll={false}
       />
 
       {/* Reservation Form */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-20 text-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.form
             onSubmit={handleSubmit}
@@ -129,7 +129,7 @@ export default function ReservationPage() {
                     value={formData.firstName}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold"
+                    className="w-full px-4 py-2 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold bg-white text-black placeholder-gray-400"
                     placeholder="John"
                   />
                 </div>
@@ -143,7 +143,7 @@ export default function ReservationPage() {
                     value={formData.lastName}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold"
+                    className="w-full px-4 py-2 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold bg-white text-black placeholder-gray-400"
                     placeholder="Doe"
                   />
                 </div>
@@ -157,7 +157,7 @@ export default function ReservationPage() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold"
+                    className="w-full px-4 py-2 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold bg-white text-black placeholder-gray-400"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -171,7 +171,7 @@ export default function ReservationPage() {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold"
+                    className="w-full px-4 py-2 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold bg-white text-black placeholder-gray-400"
                     placeholder="+1 (555) 123-4567"
                   />
                 </div>
@@ -195,7 +195,7 @@ export default function ReservationPage() {
                     value={formData.checkIn}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold"
+                    className="w-full px-4 py-2 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold bg-white text-gray-700"
                   />
                 </div>
                 <div>
@@ -209,7 +209,7 @@ export default function ReservationPage() {
                     value={formData.checkOut}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold"
+                    className="w-full px-4 py-2 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold bg-white text-gray-700"
                   />
                 </div>
                 <div>
@@ -221,13 +221,13 @@ export default function ReservationPage() {
                     name="guests"
                     value={formData.guests}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold bg-white"
+                    className="w-full px-4 py-2 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold bg-white text-gray-700"
                   >
-                    <option value="1">1 Guest</option>
-                    <option value="2">2 Guests</option>
-                    <option value="3">3 Guests</option>
-                    <option value="4">4 Guests</option>
-                    <option value="5">5+ Guests</option>
+                    <option value="1" className="bg-white text-black">1 Guest</option>
+                    <option value="2" className="bg-white text-black">2 Guests</option>
+                    <option value="3" className="bg-white text-black">3 Guests</option>
+                    <option value="4" className="bg-white text-black">4 Guests</option>
+                    <option value="5" className="bg-white text-black">5+ Guests</option>
                   </select>
                 </div>
                 <div>
@@ -240,13 +240,13 @@ export default function ReservationPage() {
                     value={formData.roomType}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold bg-white"
+                    className="w-full px-4 py-2 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold bg-white text-gray-700"
                   >
-                    <option value="">Select a room type</option>
-                    <option value="deluxe">Deluxe Suite</option>
-                    <option value="presidential">Presidential Villa</option>
-                    <option value="oceanfront">Ocean Front Room</option>
-                    <option value="mountain">Mountain Retreat</option>
+                    <option value="" className="bg-white text-black">Select a room type</option>
+                    <option value="deluxe" className="bg-white text-black">Deluxe Suite</option>
+                    <option value="presidential" className="bg-white text-black">Presidential Villa</option>
+                    <option value="oceanfront" className="bg-white text-black">Ocean Front Room</option>
+                    <option value="mountain" className="bg-white text-black">Mountain Retreat</option>
                   </select>
                 </div>
               </div>
@@ -262,7 +262,7 @@ export default function ReservationPage() {
                 value={formData.specialRequests}
                 onChange={handleChange}
                 rows={5}
-                className="w-full px-4 py-3 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold"
+                className="w-full px-4 py-3 border border-gray-lighter rounded-lg focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold bg-white text-black placeholder-gray-400"
                 placeholder="Let us know if you have any special requests or requirements..."
               />
               <p className="text-sm text-gray-600 mt-2">
@@ -272,7 +272,7 @@ export default function ReservationPage() {
 
             {/* Terms & Conditions */}
             <div className="border-t border-gray-lighter pt-8">
-              <label className="flex items-start gap-3">
+              <label className="flex items-start gap-3 cursor-pointer">
                 <input
                   type="checkbox"
                   name="terms"
@@ -281,7 +281,7 @@ export default function ReservationPage() {
                   required
                   className="w-4 h-4 mt-1 rounded border-gray-lighter accent-accent-gold cursor-pointer"
                 />
-                <span className="text-sm text-gray-700">
+                <span className="text-sm text-gray-700 select-none">
                   I agree to the terms and conditions and privacy policy. I
                   understand that a confirmation email will be sent upon
                   submission of this form.
@@ -292,10 +292,10 @@ export default function ReservationPage() {
             {/* Status Message */}
             {submitStatus && (
               <motion.div
-                className={`p-4 rounded-lg text-center ${
+                className={`p-4 rounded-lg text-center font-medium ${
                   submitStatus.includes("successfully")
-                    ? "bg-green-100 text-green-700"
-                    : "bg-red-100 text-red-700"
+                    ? "bg-green-100 text-green-800"
+                    : "bg-red-100 text-red-800"
                 }`}
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -309,7 +309,7 @@ export default function ReservationPage() {
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
-                className="flex-1 px-6 py-3 bg-black text-white font-display font-semibold rounded-lg hover:bg-accent-gold hover:text-black transition-all duration-300 disabled:opacity-50 flex items-center justify-center gap-2"
+                className="flex-1 px-6 py-2 bg-black text-white font-display rounded-lg hover:bg-accent-gold hover:text-black transition-all duration-300 disabled:opacity-50 flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -319,7 +319,7 @@ export default function ReservationPage() {
               <Link href="/rooms" className="flex-1">
                 <motion.button
                   type="button"
-                  className="w-full px-6 py-3 border-2 border-black text-black font-display font-semibold rounded-lg hover:bg-black hover:text-white transition-all duration-300"
+                  className="w-full px-6 py-2 border-1 border-black text-black font-display rounded-lg hover:bg-black hover:text-white transition-all duration-300 bg-transparent"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >

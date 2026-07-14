@@ -20,18 +20,18 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Luxury Resort | Experience Paradise',
+  title: 'Mayadevi Resort | Experience Paradise',
   description: 'Escape into luxury with our world-class resort. Experience breathtaking views, premium accommodations, award-winning hospitality, and unforgettable moments.',
   generator: 'v0.app',
-  keywords: 'luxury resort, vacation, beach resort, mountain resort, wellness retreat, hospitality',
+  keywords: 'mayadevi resort, vacation, beach resort, mountain resort, wellness retreat, hospitality',
   openGraph: {
-    title: 'Luxury Resort | Experience Paradise',
+    title: 'Mayadevi Resort | Experience Paradise',
     description: 'Escape into luxury with our world-class resort.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Luxury Resort | Experience Paradise',
+    title: 'Mayadevi Resort | Experience Paradise',
     description: 'Escape into luxury with our world-class resort.',
   },
   icons: {
