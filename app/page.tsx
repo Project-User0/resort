@@ -19,7 +19,7 @@ import CTA from '@/components/home/CTA'
 
 export default function Page() {
   return (
-    <main className="relative">
+    <main className="relative overflow-hidden">
       <Navbar />
       <Hero />
       <ImageSlider />
