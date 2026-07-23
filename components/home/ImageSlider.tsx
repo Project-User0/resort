@@ -12,7 +12,6 @@ const slides = images.slider.map((image, idx) => ({
     'Beach Resort',
     'Mountain View',
     'Luxury Villa',
-    'Spa & Wellness',
     'Fine Dining',
     'Sunset View',
   ][idx],
@@ -69,7 +68,7 @@ export default function ImageSlider() {
                   {/* Overlay for text visibility */}
                   <div className="absolute inset-0 bg-black/40" />
                   <div className="relative text-center">
-                    <h2 className="text-4xl md:text-6xl font-serif font-bold text-white mb-4">
+                    <h2 className="text-xl md:text-6xl font-serif font-bold text-white mb-4">
                       {slide.title}
                     </h2>
                   </div>

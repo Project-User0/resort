@@ -19,12 +19,8 @@ import {
 const features = [
   { icon: Home, title: 'Luxury Rooms', description: 'Elegantly designed suites with premium amenities' },
   { icon: Waves, title: 'Infinity Pool', description: 'Olympic-size pool overlooking the landscape' },
-  { icon: Heart, title: 'Spa & Wellness', description: 'Full-service spa and wellness center' },
   { icon: Utensils, title: 'Fine Dining', description: 'Award-winning restaurants and bars' },
-  { icon: MapPin, title: 'Ocean View', description: 'Breathtaking views from every room' },
-  { icon: Dumbbell, title: 'Adventure Activities', description: 'Water sports and outdoor adventures' },
   { icon: Wifi, title: 'Free Wi-Fi', description: 'High-speed internet throughout the resort' },
-  { icon: Plane, title: 'Airport Pickup', description: 'Complimentary airport transfer service' },
   { icon: Bed, title: 'Private Villas', description: 'Exclusive villas with private pools' },
   { icon: Clock, title: '24/7 Concierge', description: 'Round-the-clock guest services' },
   { icon: Leaf, title: 'Eco-Friendly', description: 'Sustainable and environmentally conscious' },

@@ -40,7 +40,7 @@ export default function Welcome() {
             viewport={{ once: true }}
           >
             <h2 className="text-5xl md:text-6xl font-serif font-bold mb-6 text-accent-gold">
-              Welcome to Paradise
+              Welcome to Mayadevi
             </h2>
             <p className="text-lg text-gray-lighter leading-relaxed mb-8">
               Our resort is a sanctuary of elegance and tranquility, where every moment is crafted to exceed your expectations. With over 15 years of experience in luxury hospitality, we&apos;ve perfected the art of creating unforgettable memories.

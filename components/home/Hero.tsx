@@ -21,7 +21,7 @@ export default function Hero() {
     <section 
       className="relative h-screen w-full overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url('${images.hero}')`,
+        backgroundImage: `url('/mayadevi.png')`,
       }}
     >
       {/* Parallax Background Overlay */}

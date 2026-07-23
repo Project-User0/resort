@@ -13,7 +13,7 @@ const rooms = [
     description: 'Spacious suite with ocean view and private balcony',
     occupancy: '2 Guests',
     size: '45 m²',
-    price: '$299',
+    price: '299',
     image: images.rooms[0],
     amenities: ['King Bed', 'Balcony', 'Bath Tub'],
   },
@@ -23,7 +23,7 @@ const rooms = [
     description: 'Ultimate luxury with private pool and lounge area',
     occupancy: '4 Guests',
     size: '120 m²',
-    price: '$699',
+    price: '699',
     image: images.rooms[1],
     amenities: ['Private Pool', 'Lounge', 'Butler Service'],
   },
@@ -33,7 +33,7 @@ const rooms = [
     description: 'Direct beach access with stunning sunset views',
     occupancy: '3 Guests',
     size: '60 m²',
-    price: '$449',
+    price: '449',
     image: images.rooms[2],
     amenities: ['Beach Access', 'Sunset View', 'Spa Bath'],
   },
@@ -43,7 +43,7 @@ const rooms = [
     description: 'Cozy room nestled in nature with panoramic views',
     occupancy: '2 Guests',
     size: '50 m²',
-    price: '$349',
+    price: '349',
     image: images.rooms[3],
     amenities: ['Mountain View', 'Fireplace', 'Jacuzzi'],
   },
@@ -150,7 +150,7 @@ export default function FeaturedRooms() {
                 <div className="flex justify-between items-center mb-4">
                   <div>
                     <span className="text-3xl font-serif font-bold text-accent-gold">
-                      {room.price}
+                     Rs {room.price}
                     </span>
                     <span className="text-gray-600 text-sm">/night</span>
                   </div>

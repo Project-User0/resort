@@ -8,7 +8,7 @@ import { Expand, ArrowRight, X } from 'lucide-react'
 import { images } from '@/lib/images'
 
 const galleryImages = images.gallery.slice(0, 8).map((img, idx) => ({
-  title: ['Rooms', 'Pool', 'Dining', 'Spa', 'Nature', 'Activities', 'Night View', 'Gardens'][idx],
+  title: ['Rooms', 'Pool', 'Dining', 'Nature', 'Activities', 'Night View', 'Gardens', 'Parking'][idx],
   image: img,
 }))
 

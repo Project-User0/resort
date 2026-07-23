@@ -165,7 +165,7 @@ export default function ContactPage() {
                   loading="lazy"
                   allowFullScreen
                   referrerPolicy="no-referrer-when-downgrade"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2146652340547!2d-74.00601592345041!3d40.71282557138067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e207a305%3A0x82c4a5e6e7e5d5e5!2sLuxury%20Resort!5e0!3m2!1sen!2sus!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.3021950470707!2d83.18336867998153!3d27.68919296492774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996f55c856b1171%3A0xc4e394d566b43e36!2sMayadevi%20Resort!5e1!3m2!1sen!2snp!4v1784783108286!5m2!1sen!2snp" 
                 />
               </motion.div>
             </motion.div>
