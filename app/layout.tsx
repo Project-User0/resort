@@ -22,7 +22,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'Mayadevi Resort | Experience Paradise',
   description: 'Escape into luxury with our world-class resort. Experience breathtaking views, premium accommodations, award-winning hospitality, and unforgettable moments.',
-  generator: 'v0.app',
+  authors: [{
+    name: 'Gaurav Karki',
+    url: 'https://karkigaurav.com.np',
+  }],
   keywords: 'mayadevi resort, vacation, beach resort, mountain resort, wellness retreat, hospitality',
   openGraph: {
     title: 'Mayadevi Resort | Experience Paradise',
@@ -37,19 +40,19 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/icon.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/icon.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/icon.png',
+        type: 'image/png',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/icon.png',
   },
 }
 
